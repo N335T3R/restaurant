@@ -8,6 +8,9 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #333;
+}
 
 
 header {
@@ -25,6 +28,11 @@ header > h1 {
     font-size: 5rem;
     font-family: HarryP;
 }
+header > h4 {
+    font-family: HarryP;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
 nav {
     display: flex;
     width: 50%;
@@ -33,19 +41,31 @@ nav {
     justify-content: space-between;
 }
 nav > button {
+    user-select: none;
+    cursor: pointer;
     align-self: center;
     font-size: 1.15rem;
     max-height: 2rem;
     background-color: transparent;
     border-radius: 0.5rem;
 }
+.cauldron {
+    user-select: none;
+    width: 2.75rem;
+    transform: rotate(3deg);
+}
+
+
+
+
 
 main {
     display: grid;
     grid-template-columns: 25% 1fr 25%;
+    gap: .5rem;
 
     padding: 1rem;
-    min-height: 10rem;
+    min-height: 1fr;
     background-color: rgba(82, 80, 85, 1);
 }
 main > * {
@@ -60,9 +80,25 @@ main > p {
     padding: 1rem;
     text-align: justify;
 }
+.food-img {
+    grid-column: 1;
+    width: 10rem;
+}
+.food-info {
+    grid-column: 2;
+    align-self: center;
+}
+.food-price {
+    grid-column: 3;
+}
 
 
-.cauldron {
-    width: 2.75rem;
-    transform: rotate(3deg);
+
+footer {
+    background-color: #333;
+    color: white;
+    font-family: HarryP;
+    letter-spacing: 0.1rem;
+    padding-left: 1rem;
+    padding-top: .15rem;
 }
