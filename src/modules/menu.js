@@ -21,8 +21,8 @@ function createCard(obj) {
     card.appendChild(price);
     card.appendChild(description);
 
-    main.appendChild(card);
     main.appendChild(obj.image);
+    main.appendChild(card);
 } 
 
 export function serveMenu() {

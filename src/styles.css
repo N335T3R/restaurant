@@ -87,6 +87,7 @@ main > p {
 .food-info {
     grid-column: 2;
     align-self: center;
+    height: 10rem;
 }
 .food-price {
     grid-column: 3;
