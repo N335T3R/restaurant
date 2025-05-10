@@ -2,6 +2,10 @@
     font-family: HarryP;
     src: url(./assets/fonts/HARRYP__.TTF);
 }
+@font-face {
+    font-family: HPDingbats;
+    src: url(./assets/fonts/harry_potter_and_the_dingbat_font.TTF);
+}
 
 *, *::after, *::before {
     margin: 0;
@@ -87,10 +91,21 @@ main > p {
 .food-info {
     grid-column: 2;
     align-self: center;
+    padding: .25rem;
     height: 10rem;
+}
+.food-info > h2 {
+    font-family: HarryP;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    margin-bottom: .5rem;
 }
 .food-price {
     grid-column: 3;
+}
+.credit {
+    grid-column: 2;
+    text-align: left;
 }
 
 
@@ -102,4 +117,12 @@ footer {
     letter-spacing: 0.1rem;
     padding-left: 1rem;
     padding-top: .15rem;
+}
+.foot {
+    user-select:  none;
+    background-color: #444;
+    font-family: HPDingbats;
+    font-size: 1.75rem;
+    text-align: center;
+    color: black;
 }
