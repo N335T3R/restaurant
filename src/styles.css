@@ -53,6 +53,12 @@ nav {
     nav {
         justify-content: center;
     }
+
+    nav > button {
+        border: none;
+        color: black;
+        font-weight: normal;
+    }
 }
 nav > button {
     user-select: none;
