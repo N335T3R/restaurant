@@ -32,6 +32,11 @@ header > h1 {
     font-size: 5rem;
     font-family: HarryP;
 }
+@media (max-width: 600px) {
+    header > h1 {
+        font-size: 3.5rem;
+    }
+}
 header > h4 {
     font-family: HarryP;
     font-size: 1.5rem;
@@ -43,6 +48,11 @@ nav {
     margin-top: 1rem;
     padding: 1rem;
     justify-content: space-between;
+}
+@media (max-width: 600px) {
+    nav {
+        justify-content: center;
+    }
 }
 nav > button {
     user-select: none;
@@ -72,8 +82,18 @@ main {
     min-height: 1fr;
     background-color: rgba(82, 80, 85, 1);
 }
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 main > * {
     grid-column: 2;
+}
+@media (max-width: 600px) {
+    main > * {
+        grid-column: 1 / -1;
+    }
 }
 main > h2 {
     font-family: HarryP;
@@ -119,6 +139,7 @@ main > p {
 
 
 footer {
+    position: relative;
     background-color: #333;
     color: white;
     font-family: HarryP;
@@ -133,4 +154,5 @@ footer {
     font-size: 1.75rem;
     text-align: center;
     color: black;
+    overflow: hidden;
 }
