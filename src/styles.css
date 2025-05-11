@@ -15,6 +15,11 @@
 body {
     background-color: #333;
 }
+@media (max-width: 600px) {
+    body {
+        max-width: 100vw;
+    }
+}
 
 
 header {
@@ -52,12 +57,13 @@ nav {
 @media (max-width: 600px) {
     nav {
         justify-content: center;
+        max-width: 50%;
     }
 
     nav > button {
         border: none;
         color: black;
-        font-weight: normal;
+        font-size: 1rem;
     }
 }
 nav > button {
@@ -74,7 +80,11 @@ nav > button {
     width: 2.75rem;
     transform: rotate(3deg);
 }
-
+@media (max-width: 600px) {
+    .cauldron {
+        width: 1rem;
+    }
+}
 
 
 
