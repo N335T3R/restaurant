@@ -61,7 +61,8 @@ nav {
 }
 @media (max-width: 600px) {
     nav {
-        justify-content: space-around;
+        margin-right: 2rem;
+        justify-content: start;
         max-width: 50%;
     }
 
@@ -88,10 +89,6 @@ nav > button {
 @media (max-width: 600px) {
     .cauldron {
         width: 1.5rem;
-    }
-    .cauldron-div {
-        width: 0rem;
-        max-width: 1.5rem;
     }
 }
 .foot {
