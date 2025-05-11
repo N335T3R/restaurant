@@ -56,7 +56,7 @@ nav {
 }
 @media (max-width: 600px) {
     nav {
-        justify-content: center;
+        justify-content: space-around;
         max-width: 50%;
     }
 
@@ -79,11 +79,6 @@ nav > button {
     user-select: none;
     width: 2.75rem;
     transform: rotate(3deg);
-}
-@media (max-width: 600px) {
-    .cauldron {
-        width: 1rem;
-    }
 }
 
 
