@@ -80,6 +80,9 @@ nav > button {
     max-height: 2rem;
     background-color: transparent;
     border-radius: 0.5rem;
+    background-image: url(./assets/images/wood.jpg);
+    background-size: cover;
+    color: antiquewhite;
 }
 .cauldron {
     user-select: none;
@@ -91,9 +94,15 @@ nav > button {
         width: 1.5rem;
     }
 }
+
+.container {
+    background-image: url(./assets/images/wood.jpg);
+    background-size: cover;
+    /* opacity: .75; */
+}
 .foot {
     user-select:  none;
-    background-color: #444;
+    /* background-color: rgba(0, 0, 0, .3); */
     font-family: HPDingbats;
     font-size: 1.75rem;
     text-align: center;
@@ -110,7 +119,9 @@ main {
 
     padding: 1rem;
     min-height: 1fr;
-    background-color: rgba(82, 80, 85, 1);
+    /* background-color: rgba(82, 80, 85, 1); */
+    /* background-image: url(./assets/images/wood.jpg);
+    background-size: cover; */
 }
 @media (max-width: 600px) {
     main {
@@ -129,10 +140,14 @@ main > h2 {
     font-family: HarryP;
     font-size: 3rem;
     letter-spacing: .25rem;
+    color: antiquewhite;
 }
 main > p {
     padding: 1rem;
     text-align: justify;
+    border-radius: 0.25rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: antiquewhite;
 }
 .home-header {
     grid-column: 1 / -1;
@@ -141,6 +156,7 @@ main > p {
 .home-header-2 {
     text-align: center;
     font-size: 1.5rem;
+    color: antiquewhite;
 }
 .food-img {
     grid-column: 1;
@@ -151,12 +167,16 @@ main > p {
     align-self: center;
     padding: .25rem;
     height: 10rem;
+    color: antiquewhite;
+    border-radius: 0.35rem;
+    background-color: rgba(0, 0, 0, .5);
 }
 .food-info > h2 {
     font-family: HarryP;
     letter-spacing: 0.1rem;
     font-size: 2rem;
     margin-bottom: .5rem;
+    color: antiquewhite;
 }
 .food-price {
     grid-column: 3;
